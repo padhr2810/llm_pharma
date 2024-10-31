@@ -14,3 +14,5 @@ Tools:
 4. Django app framework
 5. SAM2 object detection
 6. FastAPI to build endpoints
+7. Docker
+8. kubeflow (TBD)

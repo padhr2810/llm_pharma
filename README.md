@@ -1,5 +1,6 @@
-# medicine_safety
-Monitor medicines safety
+# Medicine Safety
+
+A suite of tools to monitor and enhance medicines safety.
 
 Features backlog:
 1. Object detection to identify a medicines package / tablet or capsule. Fine-tune a model.

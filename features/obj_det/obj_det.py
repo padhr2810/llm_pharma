@@ -1,4 +1,6 @@
 
+# SAM 2 - segment anything 2
+
 import os
 # if using Apple MPS, fall back to CPU for unsupported ops
 os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"

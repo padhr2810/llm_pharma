@@ -16,3 +16,9 @@ Tools:
 6. FastAPI to build endpoints
 7. Docker
 8. kubeflow (TBD)
+
+Unsloth.ai (for fine tuning)
+
+AdalFlow (for pre-production and optimizations)
+
+vLLM (for model serving

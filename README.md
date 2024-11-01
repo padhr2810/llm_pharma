@@ -25,3 +25,10 @@ AdalFlow (for pre-production and optimizations)
 vLLM (for model serving
 
 sqlalchemy put CSV into sql
+
+# install git-lfs
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+# clone the LLM
+git lfs install
+git clone https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

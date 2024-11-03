@@ -46,14 +46,27 @@ qs = {
     "Medication": "Do you take any medicines? Please list your medicines here."
 }
 
-
-import gradio as gr
+def submit_fn():
+    # check if all values have been filled out
+    # if YES = then push data to sql
+    # if NO = then popup - please fill in missing data ... 
+    print("Hit me baby one more time!") 
+    
 
 with gr.Blocks() as demo:
     text_meds = gr.Textbox(label="Do you take any medicines? Please list your medicines here.")
     text_diag = gr.Textbox(label="Do you have any medical diagnosis? Please list any diagnosis here")
     text_age  = gr.Textbox(label="What is your age?")
-    choose_sex = gr.Dropdown(label="What is your sex?", choices=["Male", "Female"])
+    choose_sex = gr.Radio(["Male", "Female"], label="Sex")
+    
+    submit_button = gr.Button(value="Submit", elem_id="submit_button")
+    reset_button  = gr.Button(value="Reset", elem_id="reset_button")
+    
+    submit_button.click(submit_fn)
+    
+    print(f"Sex = {choose_sex}")
+
+    # choose_sex = gr.Dropdown(label="What is your sex?", choices=["Male", "Female"], value=None)
 
 demo.launch()
 

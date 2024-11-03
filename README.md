@@ -28,7 +28,9 @@ sqlalchemy put CSV into sql
 
 # NDC code
 The NDC, or National Drug Code, is a unique 10-digit, 3-segment number.
+
 In the package NDC file it is 10 digits. Column = ndcpackagecode ... e.g. 0002-0800-01
+
 For the product NDC file it is only 8 digits. Column = productndc ... e.g. 0002-0800
 
 

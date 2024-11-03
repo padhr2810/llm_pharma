@@ -41,3 +41,10 @@ https://www.favicon-generator.org/
 It isn't required. It stands for "favourite icon" and is the icon the browser will use when displaying the page. You know the logos in each tab of a web browser? Those are favicons.
 
 A favicon is an icon that appears at the top of a browser tab. Although they are not required, favicons are important because they help the user identify your site. If you would like to generate a favicon, use this link abvoe. Add this code to the section of your website<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+
+# Questionnaire
+1. Age
+2. sex
+3. Diagnoses
+4. Medication
+

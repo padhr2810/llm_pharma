@@ -26,6 +26,9 @@ vLLM (for model serving
 
 sqlalchemy put CSV into sql
 
+# NDC code
+The NDC, or National Drug Code, is a unique 10-digit, 3-segment number.
+
 # install git-lfs
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 

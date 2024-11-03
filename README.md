@@ -33,6 +33,9 @@ In the package NDC file it is 10 digits. Column = ndcpackagecode ... e.g. 0002-0
 
 For the product NDC file it is only 8 digits. Column = productndc ... e.g. 0002-0800
 
+# Architecture diagrams
+e.g. UML
+
 
 # install git-lfs
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash

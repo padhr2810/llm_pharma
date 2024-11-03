@@ -3,6 +3,16 @@ import gradio as gr
 import sqlite3
 
 
+# for the custom css, you have to look at the inspector console to figure out how to target your elements correctly. 
+# And, if you use custom classes, you may have to use "!important" for specificity
+# However, custom css isn't a recommended approach in Gradio and it may not work consistently across Gradio versions. 
+# What we recommend instead is to use themes: https://gradio.app/theming-guide/
+# Example of custom styling with !important
+# 	css = """
+#	    #warning {background: red;} 
+# 	    .feedback {font-size: 24px !important;}
+#	    .feedback textarea {font-size: 24px !important;}
+#	"""
 
 con = sqlite3.connect("qn.db")	# creates db if doesn't exist.
 cur = con.cursor()
@@ -46,23 +56,30 @@ qs = {
     "Medication": "Do you take any medicines? Please list your medicines here."
 }
 
-def submit_fn():
+def submit_fn(m, d, a, s):
     # check if all values have been filled out
     # if YES = then push data to sql
     # if NO = then popup - please fill in missing data ... 
-    print("Hit me baby one more time!") 
-    
+    print("Running function submit_fn") 
+    print(f"inputs = {m, d, a, s}")
 
-with gr.Blocks() as demo:
+# FFCCCB
+
+css = """
+#buttonok {background : #007FFF; color : white}
+"""
+
+
+with gr.Blocks(css=css) as demo:
     text_meds = gr.Textbox(label="Do you take any medicines? Please list your medicines here.")
     text_diag = gr.Textbox(label="Do you have any medical diagnosis? Please list any diagnosis here")
     text_age  = gr.Textbox(label="What is your age?")
     choose_sex = gr.Radio(["Male", "Female"], label="Sex")
     
-    submit_button = gr.Button(value="Submit", elem_id="submit_button")
+    submit_button = gr.Button(value="Submit", elem_id="buttonok")
     reset_button  = gr.Button(value="Reset", elem_id="reset_button")
     
-    submit_button.click(submit_fn)
+    submit_button.click(submit_fn, inputs=[text_meds, text_diag, text_age, choose_sex])
     
     print(f"Sex = {choose_sex}")
 

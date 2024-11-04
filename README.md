@@ -2,6 +2,8 @@
 
 A suite of tools to monitor and enhance medicines safety.
 
+Python 3.10.12. Ubuntu 22.04.3 LTS
+
 Features backlog:
 1. Object detection to identify a medicines package / tablet or capsule. Fine-tune a model.
 2. Matching drug name to list of side effects

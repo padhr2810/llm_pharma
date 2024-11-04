@@ -26,6 +26,8 @@ vLLM (for model serving
 
 sqlalchemy put CSV into sql
 
+ansible for cloud deployment.
+
 # NDC code
 The NDC, or National Drug Code, is a unique 10-digit, 3-segment number.
 

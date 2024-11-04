@@ -95,6 +95,7 @@ opencv-python==4.9.0.80
 opencv-python-headless==4.10.0.84
 orjson==3.10.11
 outlines==0.0.46
+owlready2==0.47
 packaging==24.1
 pandas==2.2.3
 partial-json-parser==0.2.1.1.post4

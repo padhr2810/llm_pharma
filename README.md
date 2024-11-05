@@ -50,6 +50,22 @@ git lfs install
 
 git clone https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 
+# set up SSH key for Github.com
+
+URL: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+Three steps:
+1:Generate ssh key in terminal using the "ed25519" algorithm:
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+2: Start the SSH agent in the background and add the SSH key to it
+eval "$(ssh-agent -s)"
+....
+
+3: add SSH key to GitHub.com via their UI:
+If you want to use the same SSH key for both authentication and signing, you need to upload it twice.
+
+
 # favicon.ico 
 https://www.favicon-generator.org/
 

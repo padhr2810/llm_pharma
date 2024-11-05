@@ -65,6 +65,13 @@ eval "$(ssh-agent -s)"
 3: add SSH key to GitHub.com via their UI:
 If you want to use the same SSH key for both authentication and signing, you need to upload it twice.
 
+When cloning the repo, don't clone via HTTP. Must click on the SSH option to clone. Then will be prompted to enter the SSH Key password you set up already. From this moment forward, you can push & pull without having to provide a password, because it's set up for SSH.
+
+# Hugging Face i) SSH, ii) gated repos:
+
+Some actions, such as pushing changes, or cloning private repositories, will require you to upload your SSH public key to your account on huggingface.co ... You can use a pre-existing SSH key, or generate a new one specifically for huggingface.co ... Then easy to add the SSH Key via the Hugging Face user interface ... THEN WHEN CLONING FROM HF, SELECT THE "SSH" OPTION AND NOT THE HTTPS OPTION ...
+
+After requesting access to gated repo (e.g. Llama), can track the status of your request here: https://huggingface.co/settings/gated-repos
 
 # favicon.ico 
 https://www.favicon-generator.org/

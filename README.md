@@ -86,3 +86,19 @@ A favicon is an icon that appears at the top of a browser tab. Although they are
 3. Diagnoses
 4. Medication
 
+# GitHub
+coz updated the README on the UI remotely, and then committed it on github.com, the remote branch was ahead of the local github branch.
+So when i tried to push the local code i got this error:
+""fatal: Need to specify how to reconcile divergent branches""
+I also got an error when I tried "git pull".
+
+SOLUTION:
+
+git config pull.ff true
+
+After this i was able to run git pull and git push as usual without any errors:
+
+git pull
+
+git push
+
